@@ -150,7 +150,7 @@ case $OS in
         if [[ $BREW_LOCATION = 'which: no' ]]
         then
             command -v brew &>/dev/null || {
-                output "Installing brew"
+                echo "Installing brew"
                 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
             }
         fi
